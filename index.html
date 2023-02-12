@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hem</title>
+    <link rel="stylesheet" href="./content/css/style.css">
+    <link rel="icon" href="./content/icons/favicon.ico ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div>
+         <ul id="navbar">
+             <li class="btn-nav active"><a href="index.html">Hem</a></li>
+              <li class="btn-nav"><a href="products.html">Våra bilar</a></li>
+             <li class="btn-nav"><a href="about-us.html">Om oss</a></li>
+         </ul> 
+    </div>
+  
+
+    <div class="center">
+        <div class="container">
+            <div class="welcome-text">
+                <h1>VÄLKOMMEN TILL SRWAS BILBUTIK</h1>
+            </div>
+            <img class="background-img" src="./content/img/background-car.jpg" alt="foto på en bil">
+        </div>
+        
+    </div>
+
+    <!-- the DIV that will contain the widget -->
+    <div class="weatherWidget"></div>
+    
+    <script>
+        window.weatherWidgetConfig = window.weatherWidgetConfig || [];
+        window.weatherWidgetConfig.push({
+            selector: ".weatherWidget",
+            apiKey: "CUJ34WXWM65ANXSFH5SE83ATU", //Sign up for your personal key
+            location: "Gothenburg, Sweden", //Enter an address
+            unitGroup: "metric", //"us" or "metric"
+            forecastDays: 5, //how many days forecast to show
+            title: "Gothenburg, Sweden", //optional title to show in the 
+            showTitle: true,
+            showConditions: true
+        });
+
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    
+</body>
+<footer>
+
+</footer>
+</html>
+
+<script src="./scripts/index.js"></script>

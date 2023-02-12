@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.btn-basic{
+    background-color: #3c6e71;
+    color: white;
+    border-radius: 2px;
+    border: 1px;
+}
+
+.background-img{
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.center{
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+}
+
+body{
+    background-color:  #d9d9d9 !important;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+
+}
+
+.welcome-text{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+    width: 100%;    
+
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #353535;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #3c6e71;
+}
+
+.myButton {
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background: linear-gradient(to bottom, #3c6e71 5%, #3c6e71 100%);
+    background-color: #3c6e71;
+    border-radius: 6px;
+    border: 1px solid #367074;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #3c6e71;
+    position: relative;
+    left: 125px;
+}
+
+.close-checkout-modal{
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background: linear-gradient(to bottom, #3c6e71 5%, #3c6e71 100%);
+    background-color: #3c6e71;
+    border-radius: 6px;
+    border: 1px solid #367074;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    margin-top: 40px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #3c6e71;
+    position: relative;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #3c6e71 5%, #3c6e71 100%);
+    background-color: #3c6e71;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .background-img{
+        height: unset;
+        width: 300px;
+    }
+}
